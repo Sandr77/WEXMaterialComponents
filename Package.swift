@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "WEXMaterialComponents",
-            targets: ["WEXMaterialComponents"]),
+            targets: ["WEXMaterialComponents"])
     ],
     targets: [
         .target(
@@ -17,9 +17,6 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("."),
             ]
-        ),
-        .testTarget(
-            name: "WEXMaterialComponentsTests",
-            dependencies: ["WEXMaterialComponents"]),
+        )
     ]
 )

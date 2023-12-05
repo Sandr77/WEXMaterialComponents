@@ -19,9 +19,6 @@
 #import "MDMRepetitionTraits.h"
 #import "MDMSubclassingRestricted.h"
 
-API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 /**
  Represents repetition that repeats until a specific duration has passed.
  */
@@ -57,5 +54,3 @@ MDM_SUBCLASSING_RESTRICTED
 - (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end
-
-API_DEPRECATED_END

@@ -16,9 +16,6 @@
 
 #import <UIKit/UIKit.h>
 
-API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 /**
  An object conforming to this protocol allows registration of tracers for the purposes of debugging
  Core Animation animations.
@@ -31,5 +28,3 @@ API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
 - (void)addCoreAnimationTracer:(nonnull void (^)(CALayer * _Nonnull, CAAnimation * _Nonnull))tracer;
 
 @end
-
-API_DEPRECATED_END

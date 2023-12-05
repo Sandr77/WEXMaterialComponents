@@ -17,9 +17,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
 
-API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 /**
  The possible kinds of repetition that can be used to describe an animation.
  */
@@ -71,5 +68,3 @@ typedef struct MDMMotionRepetition MDMMotionRepetition;
     .amount = 0,                         \
     .autoreverses = false                \
   }
-
-API_DEPRECATED_END

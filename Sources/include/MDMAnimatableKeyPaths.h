@@ -17,9 +17,6 @@
 #import <Availability.h>
 #import <Foundation/Foundation.h>
 
-API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 // This macro is introduced in Xcode 9.
 #ifndef CF_TYPED_ENUM // What follows is backwards compat for Xcode 8 and below.
 #if __has_attribute(swift_wrapper)
@@ -271,5 +268,3 @@ FOUNDATION_EXPORT MDMAnimatableKeyPath MDMKeyPathY NS_SWIFT_NAME(y);
  Additive animation supported: Yes.
  */
 FOUNDATION_EXPORT MDMAnimatableKeyPath MDMKeyPathZ NS_SWIFT_NAME(z);
-
-API_DEPRECATED_END

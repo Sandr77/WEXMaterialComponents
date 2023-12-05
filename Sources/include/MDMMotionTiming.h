@@ -20,9 +20,6 @@
 #import "MDMMotionCurve.h"
 #import "MDMMotionRepetition.h"
 
-API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 /**
  A representation of timing for an animation.
  */
@@ -49,5 +46,3 @@ struct MDMMotionTiming {
 
 } NS_SWIFT_NAME(MotionTiming);
 typedef struct MDMMotionTiming MDMMotionTiming;
-
-API_DEPRECATED_END

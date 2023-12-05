@@ -17,9 +17,6 @@
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 
-API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 @interface MDMImplicitAction: NSObject
 @property(nonatomic, strong, readonly) id initialModelValue;
 @property(nonatomic, readonly) BOOL hadPresentationLayer;
@@ -29,5 +26,3 @@ API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
 @end
 
 NSArray<MDMImplicitAction *> *MDMAnimateImplicitly(void (^animations)(void));
-
-API_DEPRECATED_END

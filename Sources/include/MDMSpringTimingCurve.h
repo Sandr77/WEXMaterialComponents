@@ -20,9 +20,6 @@
 #import "MDMSubclassingRestricted.h"
 #import "MDMTimingCurve.h"
 
-API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 /**
  A timing curve that represents the motion of a single-dimensional attached spring.
  */
@@ -98,5 +95,3 @@ MDM_SUBCLASSING_RESTRICTED
 - (nonnull instancetype)init NS_UNAVAILABLE;
 
 @end
-
-API_DEPRECATED_END

@@ -23,9 +23,6 @@
 #import "MDMSubclassingRestricted.h"
 #import "MDMTimingCurve.h"
 
-API_DEPRECATED_BEGIN("Use standard UIKit/CALayer animation APIs instead.",
-                     ios(12, API_TO_BE_DEPRECATED))
-
 /**
  A generic representation of animation traits.
  */
@@ -159,5 +156,3 @@ MDM_SUBCLASSING_RESTRICTED
 - (nonnull instancetype)initWithMotionTiming:(MDMMotionTiming)timing;
 
 @end
-
-API_DEPRECATED_END

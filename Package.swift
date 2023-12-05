@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "WEXMaterialComponents",
+    defaultLocalization: "en",
     platforms: [.iOS(.v14)],
     products: [
         .library(
@@ -16,7 +17,11 @@ let package = Package(
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("."),
+ //                  .unsafeFlags(["-w"])
             ]
+//            swiftSettings: [
+//                .unsafeFlags(["-suppress-warnings"])
+//            ]
         )
     ]
 )

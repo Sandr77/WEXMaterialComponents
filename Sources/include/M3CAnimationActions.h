@@ -35,10 +35,10 @@ typedef id _Nullable (^M3CAnimationValueBlock)(void);
 @interface M3CPendingBasicAnimationAction : NSObject <CAAction>
 
 /** The animation key. If an animation already existed with this key it will be replaced. */
-@property(nonatomic, nonnull) NSString *key;
+@property(nonatomic, nonnull, strong) NSString *key;
 
 /** The value the animation should start from. */
-@property(nonatomic, nullable) id fromValue;
+@property(nonatomic, nullable, strong) id fromValue;
 
 /** A block executed when the action is run which returns the value the animation should end at. */
 @property(nonatomic, nullable) M3CAnimationValueBlock toValueBlock;
@@ -52,12 +52,12 @@ typedef id _Nullable (^M3CAnimationValueBlock)(void);
 @property(nonatomic) NSTimeInterval duration;
 
 /** Optional timing function. Defaults to nil, which has no effect. */
-@property(nonatomic, nullable) CAMediaTimingFunction *timingFunction;
+@property(nonatomic, nullable, strong) CAMediaTimingFunction *timingFunction;
 
 /**
  * The layer to read the source animation from. If nil, the layer the action is run on will be used.
  */
-@property(nonatomic, nullable) CALayer *sourceLayer;
+@property(nonatomic, nullable, strong) CALayer *sourceLayer;
 
 /**
  * An optional array of source layer animation keys. The keys are searched for in order. Defaults to
@@ -68,7 +68,7 @@ typedef id _Nullable (^M3CAnimationValueBlock)(void);
  *
  * @see M3CAnySourceLayerAnimationKey
  */
-@property(nonatomic, nullable) NSArray<NSString *> *sourceAnimationKeys;
+@property(nonatomic, nullable, strong) NSArray<NSString *> *sourceAnimationKeys;
 
 @end
 

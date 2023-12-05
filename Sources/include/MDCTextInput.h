@@ -232,9 +232,8 @@ Common API for text inputs that support having a leading view.
 MDCTextField implements this protocol but MDCMultilineTextField does not because the designers
 determined multiline text fields should only have trailing views.
 */
-__deprecated_msg(
-    "MDCTextField and its associated classes are deprecated. Please use TextControls instead.")
-    @protocol MDCLeadingViewTextInput<MDCTextInput>
+
+@protocol MDCLeadingViewTextInput<MDCTextInput>
 
 /**
  An overlay view on the leading side.

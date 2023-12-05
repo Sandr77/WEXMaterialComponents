@@ -76,18 +76,18 @@
  */
 @interface MDCBasicFontScheme : NSObject <MDCFontScheme>
 
-@property(nonatomic, nullable) UIFont *headline1;
-@property(nonatomic, nullable) UIFont *headline2;
-@property(nonatomic, nullable) UIFont *headline3;
-@property(nonatomic, nullable) UIFont *headline4;
-@property(nonatomic, nullable) UIFont *headline5;
-@property(nonatomic, nullable) UIFont *headline6;
-@property(nonatomic, nullable) UIFont *subtitle1;
-@property(nonatomic, nullable) UIFont *subtitle2;
-@property(nonatomic, nullable) UIFont *body1;
-@property(nonatomic, nullable) UIFont *body2;
-@property(nonatomic, nullable) UIFont *caption;
-@property(nonatomic, nullable) UIFont *button;
-@property(nonatomic, nullable) UIFont *overline;
+@property(nonatomic, strong, nullable) UIFont *headline1;
+@property(nonatomic, strong, nullable) UIFont *headline2;
+@property(nonatomic, strong, nullable) UIFont *headline3;
+@property(nonatomic, strong, nullable) UIFont *headline4;
+@property(nonatomic, strong, nullable) UIFont *headline5;
+@property(nonatomic, strong, nullable) UIFont *headline6;
+@property(nonatomic, strong, nullable) UIFont *subtitle1;
+@property(nonatomic, strong, nullable) UIFont *subtitle2;
+@property(nonatomic, strong, nullable) UIFont *body1;
+@property(nonatomic, strong, nullable) UIFont *body2;
+@property(nonatomic, strong, nullable) UIFont *caption;
+@property(nonatomic, strong, nullable) UIFont *button;
+@property(nonatomic, strong, nullable) UIFont *overline;
 
 @end

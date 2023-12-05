@@ -27,7 +27,7 @@ __attribute__((objc_subclassing_restricted)) @interface MDCShadow : NSObject
 - (nonnull instancetype)init NS_UNAVAILABLE;
 
 /** The color value of shadow */
-@property(nonatomic, readonly) UIColor *color;
+@property(nonatomic, readonly, strong) UIColor *color;
 
 /** CALayer.shadowOpacity */
 @property(nonatomic, readonly) CGFloat opacity;
@@ -49,7 +49,7 @@ __attribute__((objc_subclassing_restricted)) @interface MDCShadow : NSObject
 __attribute__((objc_subclassing_restricted)) @interface MDCShadowBuilder : NSObject
 
 /** The color value of shadow */
-@property(nonatomic) UIColor *color;
+@property(nonatomic, strong) UIColor *color;
 
 /** CALayer.shadowOpacity */
 @property(nonatomic) CGFloat opacity;

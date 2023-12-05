@@ -26,17 +26,17 @@
 /**
  The color scheme to use for the container scheme.
  */
-@property(nonatomic, nonnull, readonly) id<MDCColorScheming> colorScheme;
+@property(nonatomic, nonnull, readonly, strong) id<MDCColorScheming> colorScheme;
 
 /**
  The typography scheme to use for the container scheme.
  */
-@property(nonatomic, nonnull, readonly) id<MDCTypographyScheming> typographyScheme;
+@property(nonatomic, nonnull, readonly, strong) id<MDCTypographyScheming> typographyScheme;
 
 /**
  The shape scheme to use for the container scheme.
  */
-@property(nonatomic, nullable, readonly) id<MDCShapeScheming> shapeScheme;
+@property(nonatomic, nullable, readonly, strong) id<MDCShapeScheming> shapeScheme;
 
 @end
 
@@ -50,16 +50,16 @@ __attribute__((objc_subclassing_restricted)) @interface MDCContainerScheme
 /**
  Defaults to @c MDCColorSchemeDefaultsMaterial201804
  */
-@property(nonatomic, nonnull, readwrite) MDCSemanticColorScheme *colorScheme;
+@property(nonatomic, nonnull, readwrite, strong) MDCSemanticColorScheme *colorScheme;
 
 /**
  Defaults to @c MDCTypographySchemeDefaultsMaterial201804
  */
-@property(nonatomic, nonnull, readwrite) MDCTypographyScheme *typographyScheme;
+@property(nonatomic, nonnull, readwrite, strong) MDCTypographyScheme *typographyScheme;
 
 /**
  Defaults to @c nil
  */
-@property(nonatomic, nullable, readwrite) MDCShapeScheme *shapeScheme;
+@property(nonatomic, nullable, readwrite, strong) MDCShapeScheme *shapeScheme;
 
 @end

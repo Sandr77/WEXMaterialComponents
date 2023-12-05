@@ -70,21 +70,21 @@ __deprecated_msg("Please use MDCContainerScheme") @interface MDCButtonScheme
 
  By default, this is initialized with the latest color scheme defaults.
  */
-@property(nonnull, readwrite, nonatomic) id<MDCColorScheming> colorScheme;
+@property(nonnull, readwrite, nonatomic, strong) id<MDCColorScheming> colorScheme;
 
 /**
  A mutable representation of a shape scheme.
 
  By default, this is initialized with the latest shape scheme defaults.
  */
-@property(nonnull, readwrite, nonatomic) id<MDCShapeScheming> shapeScheme;
+@property(nonnull, readwrite, nonatomic, strong) id<MDCShapeScheming> shapeScheme;
 
 /**
  A mutable representation of a typography scheme.
 
  By default, this is initialized with the latest typography scheme defaults.
  */
-@property(nonnull, readwrite, nonatomic) id<MDCTypographyScheming> typographyScheme;
+@property(nonnull, readwrite, nonatomic, strong) id<MDCTypographyScheming> typographyScheme;
 
 /**
  A mutable representation of corner radius.

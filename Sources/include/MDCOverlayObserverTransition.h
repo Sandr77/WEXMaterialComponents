@@ -24,7 +24,7 @@
 /**
  If animated, the timing function of the transition animation.
  */
-@property(nonatomic) CAMediaTimingFunction *customTimingFunction;
+@property(nonatomic, strong) CAMediaTimingFunction *customTimingFunction;
 
 /**
  If animated, the curve of the transition animation.

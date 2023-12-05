@@ -59,9 +59,9 @@ typedef NS_ENUM(NSInteger, MDCShapeSchemeDefaults) {
 @interface MDCShapeScheme : NSObject <MDCShapeScheming>
 
 // Redeclare protocol properties as readwrite
-@property(nonnull, readwrite, nonatomic) MDCShapeCategory *smallComponentShape;
-@property(nonnull, readwrite, nonatomic) MDCShapeCategory *mediumComponentShape;
-@property(nonnull, readwrite, nonatomic) MDCShapeCategory *largeComponentShape;
+@property(nonnull, readwrite, nonatomic, strong) MDCShapeCategory *smallComponentShape;
+@property(nonnull, readwrite, nonatomic, strong) MDCShapeCategory *mediumComponentShape;
+@property(nonnull, readwrite, nonatomic, strong) MDCShapeCategory *largeComponentShape;
 
 /**
  Initializes the shape scheme with the latest material defaults.

@@ -17,11 +17,11 @@ let package = Package(
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("."),
- //                  .unsafeFlags(["-w"])
+                .unsafeFlags(["-w"])
+            ],
+            swiftSettings: [
+                .unsafeFlags(["-suppress-warnings"])
             ]
-//            swiftSettings: [
-//                .unsafeFlags(["-suppress-warnings"])
-//            ]
         )
     ]
 )
